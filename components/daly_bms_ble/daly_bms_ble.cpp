@@ -27,7 +27,7 @@ static const uint8_t DALY_FRAME_LEN_PASSWORD = 0x06;
 
 static const uint8_t MAX_RESPONSE_SIZE = 129;
 
-static const uint8_t ERRORS_SIZE = 24;
+static const uint8_t ERRORS_SIZE = 48;
 static const char *const ERRORS[ERRORS_SIZE] = {
     // Register 0x3A, Byte 0
     "Level 1 alarm - cell voltage too high",   // 0000 0000 0000 0001
@@ -79,7 +79,7 @@ static const char *const ERRORS[ERRORS_SIZE] = {
     "Charging MOS circuit fault",                  // 0000 0000 0100 0000
     "Discharging MOS circuit fault",               // 0000 0000 1000 0000
 
-    // Register 0x3C, Byte 0
+    // Register 0x3C, Byte 1
     "AFE acquisition chip failure",                   // 0000 0001 0000 0000
     "Single unit collection is offline",              // 0000 0010 0000 0000
     "Single temperature sensor failure",              // 0000 0100 0000 0000
